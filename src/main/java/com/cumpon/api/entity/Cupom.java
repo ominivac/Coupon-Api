@@ -16,7 +16,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "coupons")
+@Table(name = "cupons")
 @Data
 @Builder
 @NoArgsConstructor
@@ -60,9 +60,12 @@ public class Cupom {
             id = UUID.randomUUID().toString();
         }
         LocalDateTime now = LocalDateTime.now();
+        
         createdAt = now;
         updatedAt = now;
-        if (status == null || status.isEmpty()) {
+        
+        
+        if ( status.isEmpty() || status == null) {
             status = "ACTIVE";
         }
         if (published == null) {

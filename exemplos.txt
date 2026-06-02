@@ -1,0 +1,41 @@
+
+	{
+        "code": "ABC123",
+        "description": "Iure saepe amet. Excepturi saepe inventore nam doloremque voluptatem a. Quaerat odio distinctio eos. Dolor debitis ex molestias nam quae hic suscipit odit nulla. Blanditiis ratione facilis nobis quam deserunt. Doloribus iste corrupti magni ipsum illo beatae consectetur.",
+        "discountValue": 0.80,
+        "expirationDate": "2026-06-04T21:44:00",
+        "status": "ACTIVE",
+        "published": false,
+        "redeemed": false
+    }
+    
+    
+     {
+        "code": "XYZ123",
+        "description": "Cumpom Natal.",
+        "discountValue": 0.65,
+        "expirationDate": "2026-12-31T01:00:00",
+        "status": "ACTIVE",
+        "published": false,
+        "redeemed": false
+    }
+    
+    
+    {
+        "code": "COD123",
+        "description": "Cupom Junino",
+        "discountValue": 0.55,
+        "expirationDate": "2026-07-01T00:00:00",
+        "status": "DEACTIVE",
+        "published": false,
+        "redeemed": false
+    }
+    
+    
+   
+    
+    
+    
+    
+    
+    
