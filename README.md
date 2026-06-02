@@ -56,8 +56,8 @@ curl -X POST http://localhost:8080/api/cupom \
   -d '{
     "code": "NATAL1",
     "description": "Cupom de Natal",
-    "discountValue": 15.50,
-    "expirationDate": "2025-12-31T23:59:59",
+    "discountValue": 12.30,
+    "expirationDate": "2026-09-01T00:00:00",
     "published": false
   }'
 ```
@@ -65,15 +65,14 @@ curl -X POST http://localhost:8080/api/cupom \
 **Resposta (201 Created):**
 ```json
 {
-  "id": "550e8400-e29b-41d4-a716-446655440000",
-  "code": "NATAL1",
-  "description": "Cupom de Natal",
-  "discountValue": 15.50,
-  "expirationDate": "2025-12-31T23:59:59",
-  "status": "ACTIVE",
-  "published": false,
-  "redeemed": false
-}
+        "code": "ABC123",
+        "description": "Iure saepe amet. Excepturi saepe inventore nam doloremque voluptatem a. 		Quaerat odio distinctio eos. Dolor debitis ex molestias nam quae hic suscipit odit nulla. 		Blanditiis ratione facilis nobis quam deserunt. Doloribus iste corrupti magni ipsum illo 		beatae consectetur.",
+        "discountValue": 0.80,
+        "expirationDate": "2026-06-04T21:44:00",
+        "status": "ACTIVE",
+        "published": false,
+        "redeemed": false
+    }
 ```
 
 ### Listar Cupons
