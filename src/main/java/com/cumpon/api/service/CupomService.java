@@ -22,7 +22,7 @@ public class CupomService {
     private final CupomRepository repository;
     
     @Transactional
-    public CupomDTO createNeeCupom(CupomDTO dto) {
+    public CupomDTO createNewCupom(CupomDTO dto) {
         validateExpirationDate(dto.getExpirationDate());
         
         String sanitizedCode = sanitizeCode(dto.getCode());

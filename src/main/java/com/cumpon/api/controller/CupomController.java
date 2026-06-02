@@ -27,7 +27,7 @@ public class CupomController {
     
     @PostMapping
     public ResponseEntity<CupomDTO> createCupom(@Valid @RequestBody CupomDTO dto) {
-        CupomDTO cumpomCreated = service.createNeeCupom(dto);
+        CupomDTO cumpomCreated = service.createNewCupom(dto);
         return ResponseEntity.status(HttpStatus.CREATED).body(cumpomCreated);
     }
     
