@@ -1,8 +1,8 @@
 # Cupom API
 
-[![Java 17](https://www.oracle.com/java/)
-[![Spring Boot](https://spring.io/projects/spring-boot)
-[![Tests]
+[Java 17](https://www.oracle.com/java/)
+[Spring Boot](https://spring.io/projects/spring-boot)
+[Tests]
 
 
 ## Stacks
@@ -42,9 +42,9 @@ mvn spring-boot:run
 | Método | Endpoint | Descrição | Status |
 |--------|----------|-----------|--------|
 | POST | `/coupon` | Criar novo cupom | 201 Created |
-| GET | `/coupon` | Listar todos os cupons ativos | 200 OK |
-| GET | `/coupon/{id}` | Buscar cupom por ID | 200 OK |
-| DELETE | `/coupon/{id}` | Deletar cupom (soft delete) | 204 No Content |
+| GET | `/coupon` | Listar todos  | 200 OK |
+| GET | `/coupon/{id}` | Buscar cupom por id | 200 OK |
+| DELETE | `/coupon/{id}` | Deletar cupom - não apaga do bd | 204 No Content |
 
 ## Exemplos de Uso
 
