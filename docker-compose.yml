@@ -1,0 +1,9 @@
+FROM eclipse-temurin:17 WORKDIR /app 
+COPY target/app.jar app.jar 
+ENTRYPOINT ["java","-jar","app.jar"]
+version: '3'
+services:
+    app:
+      build: 
+        ports:
+         - "8080:8080"
