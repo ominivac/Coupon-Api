@@ -5,9 +5,10 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:h2:mem:dbcupom
+      - SPRING_DATASOURCE_URL=jdbc:h2:mem:dbcupo
       - SPRING_DATASOURCE_USERNAME=sa
       - SPRING_DATASOURCE_PASSWORD=
+      - SERVER_ADDRESS=0.0.0.0
     volumes:
       - h2-data:/root
     restart: always

@@ -1,0 +1,67 @@
+java17-h2-app  | 
+java17-h2-app  |   .   ____          _            __ _ _
+java17-h2-app  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+java17-h2-app  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+java17-h2-app  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+java17-h2-app  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+java17-h2-app  |  =========|_|==============|___/=/_/_/_/
+java17-h2-app  | 
+java17-h2-app  |  :: Spring Boot ::                (v4.0.6)
+java17-h2-app  | 
+java17-h2-app  | 2026-06-03T23:24:29.307Z  INFO 1 --- [Cumpon-api] [           main] com.cumpon.api.CumponApiApplication      : Starting CumponApiApplication v0.0.1-SNAPSHOT using Java 17.0.19 with PID 1 (/app/app.jar started by root in /app)
+java17-h2-app  | 2026-06-03T23:24:29.316Z  INFO 1 --- [Cumpon-api] [           main] com.cumpon.api.CumponApiApplication      : No active profile set, falling back to 1 default profile: "default"
+java17-h2-app  | 2026-06-03T23:24:30.510Z  INFO 1 --- [Cumpon-api] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+java17-h2-app  | 2026-06-03T23:24:30.598Z  INFO 1 --- [Cumpon-api] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interface.
+java17-h2-app  | 2026-06-03T23:24:31.541Z  INFO 1 --- [Cumpon-api] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+java17-h2-app  | 2026-06-03T23:24:31.583Z  INFO 1 --- [Cumpon-api] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+java17-h2-app  | 2026-06-03T23:24:31.584Z  INFO 1 --- [Cumpon-api] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+java17-h2-app  | 2026-06-03T23:24:31.674Z  INFO 1 --- [Cumpon-api] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2236 ms
+java17-h2-app  | 2026-06-03T23:24:32.137Z  INFO 1 --- [Cumpon-api] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+java17-h2-app  | 2026-06-03T23:24:32.359Z  INFO 1 --- [Cumpon-api] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+java17-h2-app  | 2026-06-03T23:24:33.327Z  INFO 1 --- [Cumpon-api] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+java17-h2-app  | 2026-06-03T23:24:33.380Z  INFO 1 --- [Cumpon-api] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+java17-h2-app  | 2026-06-03T23:24:33.647Z  INFO 1 --- [Cumpon-api] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:dbcupo user=SA
+java17-h2-app  | 2026-06-03T23:24:33.650Z  INFO 1 --- [Cumpon-api] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+java17-h2-app  | 2026-06-03T23:24:33.691Z  WARN 1 --- [Cumpon-api] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+java17-h2-app  | 2026-06-03T23:24:33.721Z  INFO 1 --- [Cumpon-api] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+java17-h2-app  | 	Database JDBC URL [jdbc:h2:mem:dbcupo]
+java17-h2-app  | 	Database driver: H2 JDBC Driver
+java17-h2-app  | 	Database dialect: H2Dialect
+java17-h2-app  | 	Database version: 2.4.240
+java17-h2-app  | 	Default catalog/schema: DBCUPO/PUBLIC
+java17-h2-app  | 	Autocommit mode: undefined/unknown
+java17-h2-app  | 	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+java17-h2-app  | 	JDBC fetch size: 100
+java17-h2-app  | 	Pool: DataSourceConnectionProvider
+java17-h2-app  | 	Minimum pool size: undefined/unknown
+java17-h2-app  | 	Maximum pool size: undefined/unknown
+java17-h2-app  | 2026-06-03T23:24:35.166Z  INFO 1 --- [Cumpon-api] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+java17-h2-app  | Hibernate: 
+java17-h2-app  |     create table coupons (
+java17-h2-app  |         id VARCHAR(36) not null,
+java17-h2-app  |         code varchar(6) not null,
+java17-h2-app  |         created_at timestamp(6) not null,
+java17-h2-app  |         description TEXT not null,
+java17-h2-app  |         discount_value numeric(10,2) not null,
+java17-h2-app  |         expiration_date timestamp(6) not null,
+java17-h2-app  |         published boolean not null,
+java17-h2-app  |         redeemed boolean not null,
+java17-h2-app  |         status varchar(20) not null,
+java17-h2-app  |         updated_at timestamp(6) not null,
+java17-h2-app  |         primary key (id)
+java17-h2-app  |     )
+java17-h2-app  | Hibernate: 
+java17-h2-app  |     alter table if exists coupons 
+java17-h2-app  |        drop constraint if exists UKeplt0kkm9yf2of2lnx6c1oy9b
+java17-h2-app  | Hibernate: 
+java17-h2-app  |     alter table if exists coupons 
+java17-h2-app  |        add constraint UKeplt0kkm9yf2of2lnx6c1oy9b unique (code)
+java17-h2-app  | 2026-06-03T23:24:35.278Z  INFO 1 --- [Cumpon-api] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+java17-h2-app  | 2026-06-03T23:24:35.433Z  INFO 1 --- [Cumpon-api] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+java17-h2-app  | 2026-06-03T23:24:35.875Z  WARN 1 --- [Cumpon-api] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+java17-h2-app  | 2026-06-03T23:24:36.295Z  INFO 1 --- [Cumpon-api] [           main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dbcupo'
+java17-h2-app  | 2026-06-03T23:24:36.399Z  INFO 1 --- [Cumpon-api] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+java17-h2-app  | 2026-06-03T23:24:36.430Z  INFO 1 --- [Cumpon-api] [           main] com.cumpon.api.CumponApiApplication      : Started CumponApiApplication in 8.26 seconds (process running for 10.176)
+java17-h2-app  | 2026-06-03T23:25:01.112Z  INFO 1 --- [Cumpon-api] [0.0-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+java17-h2-app  | 2026-06-03T23:25:01.113Z  INFO 1 --- [Cumpon-api] [0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+java17-h2-app  | 2026-06-03T23:25:01.116Z  INFO 1 --- [Cumpon-api] [0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

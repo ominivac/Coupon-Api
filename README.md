@@ -33,8 +33,16 @@ cd cupom-api
 # Compilar
 mvn clean install
 
-# Executar
+# Executar pelo terminal
 mvn spring-boot:run
+
+# OU
+# Executar pelo Docker ( evita pegar .jar sem atualizações novas
+
+mvn clean package -DskipTests
+docker compose down
+docker compose build --no-cache
+docker compose up
 
 
 ## Endpoints da API
